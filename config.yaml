@@ -1,0 +1,35 @@
+lab9:
+  repetitions: 1
+data:
+  raw_path: "data/raw/churn.csv"
+  processed_dir: "data/processed"
+  target_column: "Churn"
+  id_column: "customerID"
+
+split:
+  test_size: 0.2
+  random_state: 42
+model:
+  n_estimators: 100
+  max_depth: 10
+  random_state: 42
+  class_weight: "balanced"
+
+paths:
+  preprocessor: "models/preprocessor.pkl"
+  model: "models/churn_model.pkl"
+  evaluation_report: "artifacts/evaluation_report.json"
+  quality_gate_report: "artifacts/quality_gate_report.json"
+  inference_output: "artifacts/inference_output.csv"
+  failure_report: "artifacts/failure_test_report.json"
+  
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "churn_prediction"
+registry:
+  model_name: "churn_prediction_model"
+  decision_metric: "roc_auc"
+quality_gate:
+  metric: "roc_auc"
+  minimum_value: 0.80
+
