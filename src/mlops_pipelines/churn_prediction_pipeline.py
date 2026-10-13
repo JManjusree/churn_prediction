@@ -5,15 +5,15 @@ import sys
 
 
 STAGES = [
-    ("Data Loading", "src/mlops_pipeline/01_load_data.py"),
-    ("Raw Data Validation", "src/mlops_pipeline/02_validate_data.py"),
-    ("Preprocessing", "src/mlops_pipeline/03_preprocessing.py"),
-    ("Processed Output Validation", "src/mlops_pipeline/04_validate_outputs.py"),
-    ("Training + MLflow + Model Registry", "src/mlops_pipeline/05_train_registry.py"),
-    ("Model Evaluation", "src/mlops_pipeline/06_model_evaluation.py"),
-    ("Model Quality Gate", "src/mlops_pipeline/07_quality_gate.py"),
-    ("Automated Model Lifecycle", "src/mlops_pipeline/08_automate_lifecycle.py"),
-    ("Production Inference", "src/mlops_pipeline/09_inference.py"),
+    ("Data Loading", "src/mlops_pipelines/01_load_data.py"),
+    ("Raw Data Validation", "src/mlops_pipelines/02_validate_data.py"),
+    ("Preprocessing", "src/mlops_pipelines/03_preprocessing.py"),
+    ("Processed Output Validation", "src/mlops_pipelines/04_validate_outputs.py"),
+    ("Training + MLflow + Model Registry", "src/mlops_pipelines/05_train_registry.py"),
+    ("Model Evaluation", "src/mlops_pipelines/06_model_evaluation.py"),
+    ("Model Quality Gate", "src/mlops_pipelines/07_quality_gate.py"),
+    ("Automated Model Lifecycle", "src/mlops_pipelines/08_automate_lifecycle.py"),
+    ("Production Inference", "src/mlops_pipelines/09_inference.py"),
 ]
 
 
